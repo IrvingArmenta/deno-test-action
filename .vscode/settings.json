@@ -1,0 +1,6 @@
+{
+  "deno.cacheOnSave": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "denoland.vscode-deno",
+  "deno.enable": true
+}
