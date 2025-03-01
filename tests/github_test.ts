@@ -11,7 +11,7 @@ Deno.test('github', async (t) => {
     await writeSummary('test', 'This is a test summary');
 
     const actual = await Deno.readTextFile(
-      Deno.env.get('GITHUB_STEP_SUMMARY')!
+      Deno.env.get('GITHUB_STEP_SUMMARY')!,
     );
     assertEquals(actual, '## test\n\nThis is a test summary');
   });
