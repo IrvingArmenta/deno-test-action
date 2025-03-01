@@ -14,14 +14,14 @@ await build({
   declaration: false,
   esModule: false,
   shims: {
-    deno: true
+    deno: true,
   },
   package: {
     // Dummy package.json
     name: 'deno-test-action-irving',
     version: '0.1.0',
-    description: 'Testing deno for custom github action'
-  }
+    description: 'Testing deno for custom github action',
+  },
 });
 
 console.log('Start esbuild ...');
@@ -37,7 +37,7 @@ await esbuild
     target: 'node20',
     format: 'cjs',
     minify: false,
-    sourcemap: false
+    sourcemap: false,
   })
   .finally(() => {
     esbuild.stop();

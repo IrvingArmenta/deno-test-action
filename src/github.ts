@@ -1,4 +1,4 @@
-import { summary } from "npm:@actions/core@1.11.1";
+import { summary } from 'npm:@actions/core@1.11.1';
 
 export async function writeSummary(header: string, message: string) {
   const md = `## ${header}\n\n${message}`;
